@@ -9,16 +9,10 @@
     }
     // $query = "SELECT Name, CountryCode FROM City ORDER by ID DESC LIMIT 50,5";
     $userID = $_POST["userID"];
-    echo "<p>" . $userID . " </p>";
     $query = "INSERT INTO Users (user_id) VALUES('$userID')";
 
     if ($result = $mysqli->query($query)) {
-      /* fetch associative array */
-      // while ($row = $result->fetch_assoc()) {
-      //   printf ("%s (%s)\n", $row["Name"], $row["CountryCode"]);
-      // }
-      /* free result set */
-      // $result->free();
+      echo "<h1>User " . $user_id . " was successfully created!</h1>";
     } else {
        printf("Error message: %s\n", $mysqli->error);
     }

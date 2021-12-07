@@ -2,10 +2,9 @@
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
 
-
     $user_id = $_POST["userID"];
 
-    printf($user_id);
+    echo "<h1>User " . $user_id . "'s Posts</h1>";
 
     echo "<table border=1 style=\"text-align: center\">";
     // Draw first headder column.

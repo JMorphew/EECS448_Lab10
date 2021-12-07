@@ -34,20 +34,5 @@
 
     $mysqli->close();
 
-    // // Start filling the table
-    // for ($i = 1; $i <= 100; $i++) {
-    //     echo "<tr>";
-    //     echo "<td><strong>" . $i . "</strong></td>"; // Draw row header.
-    //     for ($j = 1; $j <= 100; $j++) {
-    //         $number =  $i * $j;
-    //         if ($number % 2 == 0) { // Color odd and even numbers for fun.
-    //             echo "<td style=\"background-color: blue; color: white\">" . $number . "</td>";
-    //         } else {
-    //             echo "<td style=\"background-color: green; color: white\">" . $number . "</td>";
-    //         }
-    //     }
-    //     echo "</tr>";
-    // }
-
     echo "</table>";
 ?>
