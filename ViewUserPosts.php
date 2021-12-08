@@ -7,7 +7,7 @@
     echo "<h1>User " . $user_id . "'s Posts</h1>";
 
     echo "<table border=1 style=\"text-align: center\">";
-    // Draw first headder column.
+    // Draw first headder row.
     echo "<tr>";
     echo "<th>Post ID</th><th>Content</th>";
     echo "</tr>";

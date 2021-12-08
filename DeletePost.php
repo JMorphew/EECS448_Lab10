@@ -2,7 +2,7 @@
   error_reporting(E_ALL);
   ini_set("display_errors", 1);
 
-  // Check if anything was selected.
+  // Check if any box was selected. (from our checkbox array)
   if (!isset($_POST["deleteCheckboxes"])) {
     echo "<h1>No Posts Deleted!</h1>";
     echo "<p>No Post was selected to be removed!</p>";
@@ -17,6 +17,7 @@
     $ids_to_delete = '';
 
     foreach ($boxes as $key => $value) {
+      // Create comma seperated list for the SQL query and post message.
       if ($current_index < $size) {
         $ids_to_delete = $ids_to_delete . ' \''. $value . '\',';
       } else {

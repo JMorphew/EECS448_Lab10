@@ -3,7 +3,7 @@
     ini_set("display_errors", 1);
 
     echo "<table border=1 style=\"text-align: center\">";
-    // Draw first headder column.
+    // Draw first headder row.
     echo "<tr>";
     echo "<th> User ID</th>";
     echo "</tr>";
@@ -18,10 +18,10 @@
     $query = "SELECT * FROM Users";
 
     if ($result = $mysqli->query($query)) {
-      /* fetch associative array */
+      /* fetch associative array and start filling table */
       while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>" . $row["user_id"] . "</td>"; // Draw row header.
+        echo "<td>" . $row["user_id"] . "</td>";
         echo "</tr>";
       }
       /* free result set */
